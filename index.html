@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- ---------Font-Awesome------- -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -65,21 +64,33 @@
     </div>
 
     <section id="about">
-      <div class="about-container">
-        <h1 class="section-title">About Me</h1>
-        <div class="about-content-1">
-          <p>
-            I am a 2nd year computer engineering student at McMaster University
-            in Hamilton, Ontario, Canada. I have a wide veriety of skills not
-            only in python, but in full stack development as well. I excel at
-            creating simple solutions to complex problems and always love
-            working with new technologies. In my free time, I love reading manga
-            and have a deep interest in business. These are some technologies I
-            am familiar with:
-          </p>
+      <div class="about-content-wrapper">
+        <div class="about-img">
+          <img src="images/mepeace.png" alt="Peace " />
+        </div>
+        <div class="about-text-wrapper">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <p>
+              Hey there, My name is Raj and I am a sophmore computer engineering
+              student at McMaster University in Hamilton, Ontario, Canada. I
+              have a wide veriety of skills and can fit in almost any role. I
+              excel at creating simple solutions to complex problems and always
+              love working with new technologies.
+            </p>
+            <p>
+              In my free time I like reading manga, watching sitcoms, and most
+              of all, playing chess! I am trying to reach 1500 in bullet so If I
+              am online, challenge me to a match
+              <a target="_blank" href="https://www.chess.com/member/raj_230"
+                >here</a
+              >!
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
     <div class="NotWorkingOnRightNow">
       <section id="projects">
         <div class="projects-container">
@@ -124,13 +135,6 @@
         </div>
       </section>
     </div>
-    <script>
-      let modeToggle = document.getElementById("btn");
-      modeToggle.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-        document.body.style.transition = "0.5s"; // Corrected line
-      };
-    </script>
-    
+    <script src="index.js"></script>
   </body>
 </html>

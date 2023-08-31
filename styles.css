@@ -7,25 +7,21 @@
 /* Define custom color variables */
 :root {
   --bg-color: #ffffff;
-  --h1: #0d3a66;
-  --h2: #0d3a66;
-  --h3: #0d3a66;
+  --header: #0d3a66;
   --p: #252525;
   --button-bg: #090909;
   --button-hover-bg: #207cae;
 }
 
-.dark-theme{
+.dark-theme {
   --bg-color: #000000;
-  --h1: #ffffff;
-  --h2: #ffffff;
-  --h3: #ffffff;
+  --header: #ffb700;
   --p: #ffffff;
   --button-bg: #ffffff;
   --button-hover-bg: #5fb8e9;
 }
 
-/* Reset some default browser styles */
+/* Default browser styles */
 body,
 h1,
 h2,
@@ -44,11 +40,18 @@ p {
   font-size: 1.7rem;
 }
 
-/* Set a background color and font */
+h1,
+h2,
+h3 {
+  color: var(--header);
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-color);
 }
+
+/* Nav Bar */
 
 .navbar {
   background-color: transparent;
@@ -99,11 +102,11 @@ body {
   cursor: pointer;
 }
 
-/* Landing Page Styling */
+/* Landing Page */
 
 .hero-container {
   position: relative;
-  height: 100vh; /* Set the container to the full viewport height */
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -120,7 +123,7 @@ body {
   position: relative;
   font-weight: 500;
   font-size: 3.8rem;
-  color: var(--h1);
+  color: var(--header);
   margin-left: 6rem;
 }
 
@@ -128,7 +131,7 @@ body {
   position: relative;
   font-weight: 500;
   font-size: 3.8rem;
-  color: var(--h2);
+  color: var(--header);
   margin-left: 6rem;
   height: 70px;
   line-height: 70px;
@@ -137,7 +140,7 @@ body {
 
 .inner-headings span {
   position: relative;
-  color: var(--h1);
+  color: var(--header);
   animation: animation 20s ease infinite;
 }
 @keyframes animation {
@@ -180,7 +183,6 @@ body {
   position: relative;
   border-radius: 20rem;
   margin-top: 5rem;
-
 }
 
 .hero-icons {
@@ -205,6 +207,47 @@ body {
 
 .hero-icons a:hover {
   color: var(--button-hover-bg);
+}
+
+/* About Me */
+
+.about-content-wrapper {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.about-img img {
+  max-width: 38rem;
+  height: auto;
+  position: relative;
+  border-radius: 20rem;
+  margin-top: 5rem;
+  margin-left: 6rem;
+}
+
+.about-content {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.about-text-wrapper h2 {
+  position: relative;
+  margin-top: 6rem;
+  margin-left: 6.3rem;
+  font-size: 6rem;
+}
+
+.about-content p {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--p);
+  margin-left: 6.3rem;
+  margin-right: 6rem;
+  margin-top: 2rem;
 }
 
 .NotWorkingOnRightNow {
