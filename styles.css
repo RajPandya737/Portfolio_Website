@@ -1,88 +1,212 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Define custom color variables */
 :root {
-    --para-text:#3d3d3d;
-    --bg-color: #ffffff;
-    --header-text: #0d3a66;
-    --link-color: #333;
-    --link-hover-color: #666;
-    --footer-bg: #333;
-    --footer-text: #fff;
-    --button-bg: #333;
-    --button-text: #fff;
-    --button-hover-bg: #666;
-  }
-  
-  /* Reset some default browser styles */
-  body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  p {
-    color: var(--para);
-    line-height: 1.6;
-    font-size: 1.7rem;
+  --bg-color: #ffffff;
+  --h1: #0d3a66;
+  --h2: #0d3a66;
+  --h3: #0d3a66;
+  --p: #252525;
+  --button-bg: #090909;
+  --button-hover-bg: #207cae;
 }
 
-  /* Set a background color and font */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: var(--bg-color);
-  }
-  
-  /* Create a container for the content */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
+.dark-theme{
+  --bg-color: #000000;
+  --h1: #ffffff;
+  --h2: #ffffff;
+  --h3: #ffffff;
+  --p: #ffffff;
+  --button-bg: #ffffff;
+  --button-hover-bg: #5fb8e9;
+}
 
-  
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.8s color 0.8s;
+}
+
+p {
+  color: var(--p);
+  line-height: 1.6;
+  font-size: 1.7rem;
+}
+
+/* Set a background color and font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+}
+
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--bg-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 40px;
+}
+
+.nav-links a {
+  color: var(--button-bg);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--button-hover-bg);
+}
+
+#btn {
+  cursor: pointer;
+}
+
 /* Landing Page Styling */
 
 .hero-container {
   position: relative;
   height: 100vh; /* Set the container to the full viewport height */
   display: flex;
+  justify-content: space-around;
   width: 100%;
 }
-  .hero-text p{
-    position: relative ;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--para-text);
-    margin-top: 20rem;
-    margin-left: 6rem;
-  }
-  .hero-text h1{
-    position: relative;
-
-    font-weight: 500;
-    font-size: 3.8rem;
-    color: var(--header-text);
-    margin-left: 6rem;
-  }
-
-
-.hero-img img {
-    max-width: 38rem;
-    height: auto;
-    position: relative; /* Set the image to be positioned relatively */
-    border-radius: 20rem;
-    margin-top: 5rem;
-    margin-left: 10rem;
+.hero-text p {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--p);
+  margin-top: 20rem;
+  margin-left: 6.3rem;
+}
+.hero-text h1 {
+  position: relative;
+  font-weight: 500;
+  font-size: 3.8rem;
+  color: var(--h1);
+  margin-left: 6rem;
 }
 
+.inner-headings {
+  position: relative;
+  font-weight: 500;
+  font-size: 3.8rem;
+  color: var(--h2);
+  margin-left: 6rem;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+}
 
-  .NotWorkingOnRightNow{
-    visibility: hidden;
+.inner-headings span {
+  position: relative;
+  color: var(--h1);
+  animation: animation 20s ease infinite;
+}
+@keyframes animation {
+  0%,
+  100% {
+    top: 0px;
   }
+  10% {
+    top: 0px;
+  }
+  20% {
+    top: -70px;
+  }
+  30% {
+    top: -70px;
+  }
+  40% {
+    top: -140px;
+  }
+  50% {
+    top: -140px;
+  }
+  60% {
+    top: -210px;
+  }
+  70% {
+    top: -210px;
+  }
+  80% {
+    top: -280px;
+  }
+  90% {
+    top: -280px;
+  }
+}
 
-  
+.hero-img img {
+  max-width: 38rem;
+  height: auto;
+  position: relative;
+  border-radius: 20rem;
+  margin-top: 5rem;
+
+}
+
+.hero-icons {
+  position: relative;
+  transform: translateY(-50%);
+  width: 2rem;
+  display: flex;
+  margin-left: 6.3rem;
+  margin-top: 2rem;
+}
+
+.linkedin_landing {
+  margin-left: 3rem;
+}
+
+.hero-icons a {
+  font-size: 3rem;
+  color: var(--heading);
+  transition: 200ms linear;
+  color: var(--button-bg);
+}
+
+.hero-icons a:hover {
+  color: var(--button-hover-bg);
+}
+
+.NotWorkingOnRightNow {
+  visibility: hidden;
+}

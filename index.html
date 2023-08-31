@@ -5,29 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- ---------Font-Awesome------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js"></script>
   </head>
   <body>
-      <div id="hero">
-        <div class="hero-container">
-          <div class="hero-text">
-            <p class="hero-name">Raj Pandya</p>
-            <h1>Python Enthusiast</h1>
-                <!-- <span>Full Stack Developer</span>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="logo"></a>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a id="btn">Dark Mode</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <p class="hero-name">Raj Pandya</p>
+          <div class="inner-headings">
+            <span
+              >Python Enthusiast <br />
+              Full Stack Developer<br />
+              Comp Eng Student<br />
+              Leetcoder<br />
+              Game Developer<br
+            /></span>
+          </div>
+
+          <!-- <h1>Python Enthusiast</h1> -->
+          <!-- <span>Full Stack Developer</span>
             <span>Comp Eng Student</span>
             <span>Leetcoder</span> -->
-          </div>
-          <div class="hero-img">
-            <img src="images/selfie.png" alt="Me" />
+          <div class="hero-icons">
+            <a target="_blank" href="https://github.com/rajpandya737"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              class="linkedin_landing"
+              target="_blank"
+              href="https://www.linkedin.com/in/raj-pandya-/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </div>
         </div>
-        <!-- <div class="hero-icons">
-        <a target="_blank" href="https://github.com/rajpandya737"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a target="_blank" href="https://www.linkedin.com/in/raj-pandya-/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a> -->
+
+        <div class="hero-img">
+          <img src="images/selfie.png" alt="Me" />
+        </div>
       </div>
+    </div>
 
     <section id="about">
       <div class="about-container">
@@ -89,5 +124,13 @@
         </div>
       </section>
     </div>
+    <script>
+      let modeToggle = document.getElementById("btn");
+      modeToggle.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        document.body.style.transition = "0.5s"; // Corrected line
+      };
+    </script>
+    
   </body>
 </html>
