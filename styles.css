@@ -1,22 +1,88 @@
-h1 {
-    color: rgb(0, 0, 0);
-    font-family: "Architects Daughter", cursive;
-    font-size: 60px;
-  }
-  h2 {
-    color: rgb(0, 0, 0);
-    font-family: "Architects Daughter", cursive;
-    font-size: 40px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Define custom color variables */
+:root {
+    --para-text:#3d3d3d;
+    --bg-color: #ffffff;
+    --header-text: #0d3a66;
+    --link-color: #333;
+    --link-hover-color: #666;
+    --footer-bg: #333;
+    --footer-text: #fff;
+    --button-bg: #333;
+    --button-text: #fff;
+    --button-hover-bg: #666;
   }
   
-  h3 {
-    color: rgb(0, 0, 0);
-    font-family: "Architects Daughter", cursive;
-    font-size: 30px;
+  /* Reset some default browser styles */
+  body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.7rem;
+}
+
+  /* Set a background color and font */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+  }
+  
+  /* Create a container for the content */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+
+  
+/* Landing Page Styling */
+
+.hero-container {
+  position: relative;
+  height: 100vh; /* Set the container to the full viewport height */
+  display: flex;
+  width: 100%;
+}
+  .hero-text p{
+    position: relative ;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--para-text);
+    margin-top: 20rem;
+    margin-left: 6rem;
+  }
+  .hero-text h1{
+    position: relative;
+
+    font-weight: 500;
+    font-size: 3.8rem;
+    color: var(--header-text);
+    margin-left: 6rem;
   }
 
-  p {
-    color: rgb(0, 0, 0);
-    font-family: "Architects Daughter", cursive;
-    font-size: 20px;
+
+.hero-img img {
+    max-width: 38rem;
+    height: auto;
+    position: relative; /* Set the image to be positioned relatively */
+    border-radius: 20rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
+}
+
+
+  .NotWorkingOnRightNow{
+    visibility: hidden;
   }
+
+  
