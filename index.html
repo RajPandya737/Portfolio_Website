@@ -3,138 +3,338 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Raj Pandya Portfolio</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-container">
-        <a class="logo"></a>
-        <ul class="nav-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a id="btn">Dark Mode</a></li>
-        </ul>
+    <header class="header">
+      <h2 class="visually-hidden">Header</h2>
+      <div class="wrapper">
+        <nav class="header__nav">
+          <h2 class="visually-hidden">Navigation</h2>
+          <a href="/" class="header__home">
+            Raj Pandya
+            <span class="visually-hidden">(to home page)</span>
+          </a>
+          <a href="https://github.com/rajpandya737" class="header__social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              aria-labelledby="socialGitHub"
+              role="img"
+            >
+              <title id="socialGitHub">GitHub</title>
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/raj-pandya-/"
+            class="header__social"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              aria-labelledby="socialLinkedIn"
+              role="img"
+            >
+              <title id="socialLinkedIn">LinkedIn</title>
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
+              />
+            </svg>
+          </a>
+        </nav>
       </div>
-    </nav>
-    <div id="hero">
-      <div class="hero-container">
-        <div class="hero-text">
-          <p class="hero-name">Raj Pandya</p>
-          <div class="inner-headings">
-            <span
-              >Python Enthusiast <br />
-              Full Stack Developer<br />
-              Comp Eng Student<br />
-              Leetcoder<br />
-              Game Developer<br
-            /></span>
-          </div>
+    </header>
 
-          <!-- <h1>Python Enthusiast</h1> -->
-          <!-- <span>Full Stack Developer</span>
-            <span>Comp Eng Student</span>
-            <span>Leetcoder</span> -->
-          <div class="hero-icons">
-            <a target="_blank" href="https://github.com/rajpandya737"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a
-              class="linkedin_landing"
-              target="_blank"
-              href="https://www.linkedin.com/in/raj-pandya-/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="hero-img">
-          <img src="images/selfie.png" alt="Me" />
-        </div>
-      </div>
-    </div>
-
-    <section id="about">
-      <div class="about-content-wrapper">
-        <div class="about-img">
-          <img src="images/mepeace.png" alt="Peace " />
-        </div>
-        <div class="about-text-wrapper">
-          <h2 class="section-title">About Me</h2>
-          <div class="about-content">
-            <p>
-              Hey there, My name is Raj and I am a sophmore computer engineering
-              student at McMaster University in Hamilton, Ontario, Canada. I
-              have a wide veriety of skills and can fit in almost any role. I
-              excel at creating simple solutions to complex problems and always
-              love working with new technologies.
-            </p>
-            <p>
-              In my free time I like reading manga, watching sitcoms, and most
-              of all, playing chess! I am trying to reach 1500 in bullet so If I
-              am online, challenge me to a match
-              <a target="_blank" href="https://www.chess.com/member/raj_230"
-                >here</a
-              >!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="NotWorkingOnRightNow">
-      <section id="projects">
-        <div class="projects-container">
-          <h1 class="section-title">Projects</h1>
-          <div class="projects-content-1">
-            <div>
-              <h3>Anisync</h3>
-              <h4>
-                Flask, SQLite, Beautiful Soup, API's, HTML, CSS, Javascript,
-                Gunicorn, Nginx, Google Analytics, Digital Ocean
-              </h4>
-              <p>
-                Anisync is a web application that takes a MyAnimeList username
-                as input and returns a collection of songs from the popular game
-                Osu! that appear on the user's anime list. As an Osu! player
-                myself, I always found it difficult to find maps to play when it
-                was so tedious to search one by one. I streamlined the process
-                and the project recieved over 800 visits in just 2 days
+    <main id="main">
+      <section class="hero">
+        <div class="wrapper hero__wrapper bottom-border">
+          <div class="hero__content">
+            <picture>
+              <source
+                media="(min-width: 62.5em)"
+                srcset="/assets/images/image-profile-desktop.webp"
+              />
+              <source
+                media="(min-width: 37.5em)"
+                srcset="/assets/images/image-profile-tablet.webp"
+              />
+              <img
+                class="hero__image"
+                src="/assets/images/image-profile-mobile.webp"
+                alt="picture of Raj Pandya"
+                width-="174"
+                height="383"
+              />
+            </picture>
+            <img
+              class="hero__rings"
+              src="/assets/images/pattern-rings.svg"
+              alt=""
+              width="530"
+              height="129"
+            />
+            <img
+              class="hero__circle"
+              src="/assets/images/pattern-circle.svg"
+              alt=""
+              width="129"
+              height="129"
+            />
+            <div class="hero__text">
+              <h1 class="hero__headline header-xl">
+                Nice to<br />
+                meet you! I'm <span>Raj Pandya</span>.
+              </h1>
+              <p class="hero__description">
+                Python developer passionate about building things that people
+                can use, whether that be websites, tools, or anything in
+                between.
               </p>
-            </div>
-            <div>
-              <h3>Rubik's Cube Solver</h3>
-              <h4>OpenCV, Numpy, Matplotlib, Pillow, ColorMath</h4>
-              <p>
-                A program able to solve rubiks cubes by taking photos of each
-                side, analysing the colors, and returing the optimal solution to
-                the cube. This solution was complimented by a interactive 3-D
-                simulation of the starting cube using to give confidence to the
-                user that they have the same cube.
-              </p>
-            </div>
-            <div>
-              <h3>Number Guesser</h3>
-              <h4>TensorFlow, OpenCV, Numpy, Pygame</h4>
-              <p>
-                Number Guesser allows users to draw digits on a screen using
-                Pygame, and then uses a trained neural network to guess the
-                drawn digit with up to 99.8% accuracy.
-              </p>
+              <a href="#contact" class="hero__contact underline">Contact me</a>
             </div>
           </div>
         </div>
       </section>
-    </div>
-    <script src="index.js"></script>
+
+      <section class="about">
+        <div class="wrapper about__wrapper bottom-border">
+          <div class="about__image">
+            <picture>
+              <img
+                class="about__picture"
+                src="/assets/images/about-image.webp"
+                alt="picture of Raj Pandya"
+                width-="174"
+                height="383"
+              />
+            </picture>
+          </div>
+          <div class="about__content">
+            <div class="about__text">
+              <h1 class="about__headline header-xl"><span>About Me</span></h1>
+              <div class="about__description">
+                <p>
+                  Hey there, My name is Raj and I am a sophmore computer
+                  engineering student at McMaster University in Hamilton,
+                  Ontario, Canada. I have a wide veriety of skills and can fit
+                  in almost any role. I excel at creating simple solutions to
+                  complex problems and always love working with new
+                  technologies.
+                </p>
+                <p>
+                  In my free time I like reading manga, watching sitcoms, and
+                  most of all, playing chess! I am trying to reach 1500 in
+                  bullet so If I am online, challenge me to a match
+                  <a target="_blank" href="https://www.chess.com/member/raj_230"
+                    >here</a
+                  >!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="wrapper projects__wrapper">
+          <div class="projects__grid">
+            <h2 class="projects__headline header-xl">Projects</h2>
+            <a href="" class=""></a>
+
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="/assets/images/thumbnail-project-1-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="/assets/images/thumbnail-project-1-small.webp"
+                  alt="screenshot of design portfolio website"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              <h3 class="projects__name">Anisync</h3>
+              <p class="projects__tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>BeautifulSoup</span>
+                <span>MAL + Osu! API</span>
+                <span>HTML/CSS/Javascript</span>
+                <span>Nginx</span>
+                <span>Digital Ocean</span>
+              </p>
+              <div class="projects__links">
+                <a href="https://www.anisync.live/" class="underline">View Website</a>
+                <a href="https://github.com/RajPandya737/Anisync" class="underline">View Code</a>
+              </div>
+            </div>
+
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="/assets/images/thumbnail-project-2-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="/assets/images/thumbnail-project-2-small.webp"
+                  alt="screenshot of learning platform website with different courses"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              <h3 class="projects__name">Rubiks Cube Solver</h3>
+              <p class="projects__tags">
+                <span>Python</span>
+                <span>Numpy</span>
+                <span>Matplotlib</span>
+                <span>OpenCV</span>
+                <span>Pillow</span>
+              </p>
+              <div class="projects__links">
+                <a href="https://www.youtube.com/watch?v=8CAep-V3u5w" class="underline">View Youtube Video</a>
+                <a href="https://github.com/RajPandya737/Rubiks-Cube-Solver" class="underline">View Code</a>
+              </div>
+            </div>
+
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="/assets/images/thumbnail-project-3-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="/assets/images/thumbnail-project-3-small.webp"
+                  alt="screenshot of To Do App showing a list of active and complete tasks"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              <h3 class="projects__name">Number Guesser</h3>
+              <p class="projects__tags">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>Numpy</span>
+                <span>OpenCV</span>
+                <span>TKinter</span>
+              </p>
+              <div class="projects__links">
+                <a href="https://github.com/RajPandya737/NumberGuesser" class="underline">View Github Demo</a>
+              </div>
+            </div>
+
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="/assets/images/thumbnail-project-4-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="/assets/images/thumbnail-project-4-small.webp"
+                  alt="screenshot of video player app with grid of thumbnails of movies and TV shows"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              <h3 class="projects__name">Pacman</h3>
+              <p class="projects__tags">
+                <span>Python</span>
+                <span>Pygame</span>
+                <span>Numpy</span>
+              </p>
+              <div class="projects__links">
+                <a href="https://github.com/RajPandya737/Pacman" class="underline">View Github Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact bg-less-dark">
+        <div class="wrapper contact__wrapper bottom-border">
+          <div class="contact__text">
+            <h2 class="contact__headline header-xl">Contact</h2>
+            <p class="contact__description">
+              I would love to sit down and have a chat, to get in contact with
+              me, email me at rajpandya737@gmail.com and I will get back to you
+              as soon as possible
+            </p>
+          </div>
+        </div>
+        <img
+          class="contact__rings"
+          src="/assets/images/pattern-rings.svg"
+          alt=""
+          width="530"
+          height="129"
+        />
+      </section>
+    </main>
+
+    <footer class="footer bg-less-dark">
+      <h2 class="visually-hidden">Footer</h2>
+      <div class="wrapper">
+        <nav class="header__nav">
+          <h2 class="visually-hidden">Navigation</h2>
+          <a href="/" class="header__home">
+            Raj Pandya
+            <span class="visually-hidden">(to home page)</span>
+          </a>
+          <a href="https://github.com/rajpandya737" class="header__social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              aria-labelledby="socialGitHub"
+              role="img"
+            >
+              <title id="socialGitHub">GitHub</title>
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
+              />
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/raj-pandya-/" class="header__social">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="24"
+              aria-labelledby="socialLinkedIn"
+              role="img"
+            >
+              <title id="socialLinkedIn">LinkedIn</title>
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
