@@ -375,6 +375,10 @@ section {
   max-width: 20rem;
 }
 
+.color-container p {
+  margin-bottom: 1rem;
+}
+
 .project-img {
   border-radius: 2rem;
   width: 90%;
