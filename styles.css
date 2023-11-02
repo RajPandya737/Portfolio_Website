@@ -14,6 +14,8 @@
   --subheader: #0d3a66;
 }
 
+
+
 .dark-theme {
   --bg-color: #000000;
   --header: #ffb700;
@@ -67,12 +69,11 @@ body {
 }
 
 .navbar-container {
-  max-width: 1200px;
+
   margin: 0 auto;
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -88,7 +89,7 @@ body {
 }
 
 .nav-links li {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .nav-links a {
@@ -228,11 +229,11 @@ body {
 
 .about-content-wrapper {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .about-img img {
@@ -246,13 +247,12 @@ body {
 
 .about-content {
   position: relative;
-  height: 100vh;
+  /* height: 10vh; */
   width: 100%;
 }
-.about-text-wrapper h2 {
+h2 {
   position: relative;
   margin-top: 6rem;
-  margin-left: 6.3rem;
   font-weight: 500;
   font-size: 3.8rem;
 }
@@ -272,12 +272,14 @@ body {
 .projects-container h2{
   position: relative;
   margin-top: 6rem;
-  margin-left: 6.3rem;
+
   font-weight: 500;
   font-size: 3.8rem;
 }
 
+
 .inner-projects {
+  display: flex;
   position: relative;
   margin-left: 6.3rem;
   margin-right: 6rem;
@@ -285,10 +287,24 @@ body {
 
 .inner-projects h3{
   font-size: 2rem;
+  text-align: left;
 }
 
 .inner-projects h4{
   color: var(--subheader);
+}
+
+.project-name{
+  width: 19rem;
+  margin-right: 4rem;
+}
+
+
+.project-title h3{
+  font-size: 3rem;
+}
+.project-title h4{
+  max-width: 6rem;
 }
 
 .smaller-icon {
@@ -326,7 +342,13 @@ title p{
 
 .checkpoint p{
   line-height: 27px;
-  color: #ccc;
+  color: var(--p);
+  font-size: 20px;
+}
+
+.checkpoint h4{
+  line-height: 27px;
+  color: var(--p);
 }
 
 .checkpoint:nth-child(odd){
