@@ -38,6 +38,11 @@ li {
   transition: background-color 0.8s color 0.8s;
 }
 
+body{
+  max-width: 100%;
+  overflow-x: hidden
+}
+
 p {
   color: var(--p);
   line-height: 1.6;
@@ -229,7 +234,7 @@ body {
 
 .about-content-wrapper {
   position: relative;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -255,6 +260,10 @@ h2 {
   margin-top: 6rem;
   font-weight: 500;
   font-size: 3.8rem;
+  position: relative;
+  margin-top: 6rem;
+  font-weight: 500;
+  font-size: 3.8rem;
 }
 
 .about-content p {
@@ -269,13 +278,7 @@ h2 {
 
 /* Projects */
 
-.projects-container h2{
-  position: relative;
-  margin-top: 6rem;
 
-  font-weight: 500;
-  font-size: 3.8rem;
-}
 
 
 .inner-projects {
@@ -427,6 +430,187 @@ title p{
 
   }
 }
+
+/* Responsive styles for tablets */
+@media screen and (max-width: 850px) {
+  p {
+    font-size: 1.4rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .navbar-container {
+    padding: 10px;
+  }
+
+  .inner-headings{
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
+
+  .hero-text p {
+    margin-top: 10rem;
+    margin-left: 2rem;
+  }
+
+  .hero-text {
+    margin-top: 10rem;
+    margin-left: 0;
+  }
+
+  .about-content-wrapper {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    max-width: 100%;
+    margin: 2rem auto;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .hero-icons {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .inner-projects {
+    display: block;
+  }
+
+  .project-name{
+    width: 48rem;
+  }
+  /* Hide elements that are not essential on tablets */
+  .NotWorkingOnRightNow {
+    display: none;
+  }
+
+  /* Add additional responsive styles as needed */
+}
+
+@media screen and (max-width: 850px) {
+  .navbar-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .nav-links li {
+    margin-right: 0; /* Remove margin between list items */
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+
+  .navbar {
+    width: 95%;
+  }
+
+  /* Add a "hamburger" icon for mobile navigation (you'll need to create the icon) */
+  .mobile-menu-icon {
+    display: block; /* Show the icon on smaller screens */
+  }
+
+  .inner-headings{
+    display: none;
+  }
+  .hero-text p {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 20vh;
+  }
+
+  .hero-container{
+    height: 160vh;
+  }
+
+  .project-title h3{
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .project-title h4{
+    max-width: 6rem;
+  }
+
+  .about-content p {
+    position: relative;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--p);
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+  }
+
+  .inner-projects{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .project-name{
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .inner-projects h3 {
+    text-align: center; 
+  }
+
+  .project-name h2{
+    width: 19rem;
+    margin-right: 0rem;
+    max-width: 280px;
+    text-align: center;
+  }
+
+
+  .inner-projects p{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .icons{
+    display: none;
+  }
+
+  .section-title{
+    font-size: 3rem;
+  }
+
+  h2{
+    position: relative;
+    margin-top: 6rem;
+    font-weight: 500;
+    font-size: 3.8rem;
+  }
+
+  .checkpoint h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .checkpoint p{
+    text-align: center;
+  }
+}
+
 
 
 .NotWorkingOnRightNow {
