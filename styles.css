@@ -6,8 +6,8 @@
 
 /* Define custom color variables */
 :root {
-  --bg-color: #ffffff;
-  --header: #0d3a66;
+  --bg-color: #EFEFEF;
+  --header: #000000;
   --p: #252525;
   --button-bg: #090909;
   --button-hover-bg: #207cae;
@@ -36,6 +36,7 @@ li {
   margin: 0;
   padding: 0;
   transition: background-color 0.8s color 0.8s;
+  
 }
 
 body{
@@ -46,7 +47,7 @@ body{
 p {
   color: var(--p);
   line-height: 1.6;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 h1,
@@ -115,18 +116,20 @@ body {
 
 .hero-container {
   position: relative;
-  height: 100vh;
+  /* height: 80vh; */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   width: 100%;
 }
 .hero-text p {
   position: relative;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: var(--p);
-  margin-top: 20rem;
-  margin-left: 6.3rem;
+  /* font-weight: 100; */
+  font-size: 18rem;
+  color: var(--button-bg);
+  margin-top: 19rem;
+  margin-left: 3rem;
+  line-height: 0.8;
+
 }
 .hero-text h1 {
   position: relative;
@@ -268,8 +271,8 @@ h2 {
 
 .about-content p {
   position: relative;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 2rem;
   color: var(--p);
   margin-left: 6.3rem;
   margin-right: 6rem;
